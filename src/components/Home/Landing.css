@@ -1,0 +1,30 @@
+h1.main-h1 {
+     text-align: left;
+     font-size: 40px;
+     font-family: auto;
+     font-style: normal;
+ }
+ p.main-p {
+     text-align: left;
+     font-size: 20px;
+     max-width: 400px;
+     width: 100%;
+     font-weight: 500;
+     font-family: auto;
+     font-style: normal;
+ }
+ button.main-btn > a {
+     border: 3px solid white;
+     color: white;
+     font-size: 20px;
+     font-style: normal;
+     font-family: auto;
+     transition: all 0.5s ease;
+     text-decoration: none;
+     padding: 8px 13px;
+}
+
+ button.main-btn > a:hover {
+     background-color: white;
+     color: black;
+ }
