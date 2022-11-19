@@ -13,7 +13,6 @@ const Capsule = () => {
     setFilterParam((data) => ({ ...data, [e.target.name]: e.target.value }));
   };
   const handleSearch = () => {
-    console.log(filterParam)
     if (filterParam.type === "all") {
       setarray(Capsules);
     } else {

@@ -37,7 +37,7 @@ const Crew = () => {
     </div>
       <div className="paginate flex justify-center align-center gap-20 text-white">
             <button className="paginatebtn" onClick={() => ChangePage(number - 1)}>Previous</button>
-              {pageNumber.map((Elem,i) => { return (<> <button key={i} className="paginatebtn" onClick={() => ChangePage(Elem)}> {Elem} </button></>) })}
+              {pageNumber.map((Elem,i) => { return (<button  key={i} className="paginatebtn" onClick={() => ChangePage(Elem)}> {Elem} </button>) })}
             <button className="paginatebtn" onClick={() => ChangePage(number + 1)}>Next</button>        
       </div>
   </section>
