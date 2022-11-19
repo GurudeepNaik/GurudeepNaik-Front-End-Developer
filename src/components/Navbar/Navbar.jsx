@@ -7,9 +7,9 @@ import "./Navbar.css"
 
 const navigation = [
   { name: "Home", to: "/" },
-  { name: "Rockets", to: "/rockets" },
-  { name: "Capsules", to: "/capsules" },
-  { name: "Dragon", to: "/dragon" },
+  { name: "Rockets", to: "/rocket" },
+  { name: "Capsules", to: "/capsule" },
+  { name: "Crew", to: "/crew" },
 ];
 
 export default function Navbar() {

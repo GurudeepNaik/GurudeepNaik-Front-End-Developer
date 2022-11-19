@@ -1,0 +1,118 @@
+#grid-list {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 95%;
+  margin-left: auto;
+  overflow-x: auto;
+}
+#grid-list::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  height: 350px !important;
+  min-width: 550px !important;
+  background-repeat: no-repeat;
+  border-radius: 20px !important;
+  background-size: cover;
+  position: relative;
+  padding: 20px;
+  border: none !important;
+  gap: 20px !important;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.card:hover{
+     box-shadow: 0 0 10px #fff;
+}
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.heading-container > h1 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 800;
+  text-align: left;
+  color: #fff;
+}
+button.btn {
+  position: absolute;
+  bottom: 50px;
+  width: 100px;
+  border: none;
+  height: 36px;
+  border-radius: 10px;
+  background: #fff;
+  color: #433b3b;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+.card > p {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-bottom: 2px;
+  color: rgb(54, 50, 50);
+  opacity: 0.9;
+  text-decoration: none !important;
+}
+h2.heading {
+  font-size: 26px;
+  color: rgb(54, 50, 50);
+  width: 200px;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none !important;
+}
+button.btn:hover {
+  box-shadow: 0 0 5px 1px #c7bfbf;
+  cursor: pointer;
+}
+button.arrow-btn {
+  background: #fff;
+  border: 1px solid #c2c2c2;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.arrow-btn-container {
+  display: flex;
+  width: 80px;
+  justify-content: space-evenly;
+}
+button.arrow-btn:hover {
+  box-shadow: 0 0 5px 1px #c7bfbf;
+  cursor: pointer;
+}
+@media screen and (max-width:1025px) {
+     #grid-list {
+          flex-wrap: wrap;
+      }
+      .arrow-btn-container {
+          display: none;
+      }
+      .card {
+          height: 500px !important;
+          min-width: 100% !important;
+          margin: 30px auto;
+      }
+}
+@media screen and (max-width:600px) {
+      .card {
+          height: 300px !important;
+      }
+}

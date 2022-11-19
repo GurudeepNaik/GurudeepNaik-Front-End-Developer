@@ -4,15 +4,20 @@ const APIContext = createContext();
 
 export function APIContextProvder({ children }) {
   const [rockets, setRockets] = useState([]);
+  const [Capsules, setCapsules] = useState([]);
   useEffect(() => {
     axios
       .get("https://api.spacexdata.com/v4/rockets")
-      .then((data) => setRockets(data))
+      .then((data) => setRockets(data.data))
+      .catch((err) => console.log(err));
+    axios
+      .get("https://api.spacexdata.com/v4/capsules")
+      .then((data) => setCapsules(data.data))
       .catch((err) => console.log(err));
   }, []);
 
   return (
-    <APIContext.Provider value={{ rockets }}>{children}</APIContext.Provider>
+    <APIContext.Provider value={{ rockets, Capsules }}>{children}</APIContext.Provider>
   );
 }
 

@@ -1,11 +1,11 @@
 import React from "react";
-import { useAPI } from "../../context/usecontext";
+
 import GetWithHeader from "../GetWithHeader/GetWithHeader";
 import "./Landing.css";
 
 const Landing = () => {
-  const { rockets } = useAPI();
-  console.log(rockets);
+  // const { rockets } = useAPI();
+  // console.log(rockets);
   return (
     <div className="main-container">
       <main>
