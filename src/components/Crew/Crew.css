@@ -1,0 +1,56 @@
+.justify-center {
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.card {
+  max-width: 500px !important;
+  width: 100%;
+  height: 400px !important;
+  background-size: cover;
+  position: relative;
+}
+.card > p {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  font-size: 25px;
+  color: white;
+  font-weight: 700;
+  font-style: normal;
+}
+.card > .btn {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  max-width: 150px;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  font-style: normal;
+  background: transparent;
+  border: 3px solid white;
+}
+.paginate{
+     margin: 20px auto;
+}
+.paginate > button{
+     font-size: 18px;
+     color: white;
+     font-weight: 700;
+     font-style: normal;
+     background: transparent;
+     border: 3px solid white;
+     padding: 5px 10px;
+     border-radius: 3px;
+}
+@media screen and (max-width: 1025px) {
+  .card {
+    max-width: 500px !important;
+    width: 90% !important;
+    min-width: 100px !important;
+    height: 400px !important;
+    background-size: cover;
+    position: relative;
+  }
+}

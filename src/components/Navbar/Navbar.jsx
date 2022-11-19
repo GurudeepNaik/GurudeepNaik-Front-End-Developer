@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
+import Logo from "../../Images/logo.png"
 import "./Navbar.css"
 
 const navigation = [
@@ -22,7 +23,7 @@ export default function Navbar() {
           <nav className="flex h-9 items-center justify-between" aria-label="Global">
 
             <div className="flex lg:min-w-0 lg:flex-2 gap-20" aria-label="Global">
-                <img className="h-20 w-60" src="https://assets.stickpng.com/images/5842a770a6515b1e0ad75afe.png" alt="Logo"/>
+                <img className="h-20 w-60" src={Logo} alt="Logo"/>
             </div>
 
             <div className="flex lg:hidden">

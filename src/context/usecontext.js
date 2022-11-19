@@ -5,6 +5,7 @@ const APIContext = createContext();
 export function APIContextProvder({ children }) {
   const [rockets, setRockets] = useState([]);
   const [Capsules, setCapsules] = useState([]);
+  const [Crew, setCrew] = useState([]);
   useEffect(() => {
     axios
       .get("https://api.spacexdata.com/v4/rockets")
@@ -14,10 +15,14 @@ export function APIContextProvder({ children }) {
       .get("https://api.spacexdata.com/v4/capsules")
       .then((data) => setCapsules(data.data))
       .catch((err) => console.log(err));
+    axios
+      .get("https://api.spacexdata.com/v4/crew")
+      .then((data) => setCrew(data.data))
+      .catch((err) => console.log(err));
   }, []);
 
   return (
-    <APIContext.Provider value={{ rockets, Capsules }}>{children}</APIContext.Provider>
+    <APIContext.Provider value={{ rockets, Capsules, Crew }}>{children}</APIContext.Provider>
   );
 }
 
